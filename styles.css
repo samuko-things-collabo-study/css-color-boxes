@@ -1,0 +1,55 @@
+:root {
+  --btn-width: 200px;
+  --btn-margin: 10px;
+  --base-btn-color: black;
+}
+
+body {
+  margin: none;
+  padding: none;
+  background-color: white;
+}
+
+
+.btn {
+  width: var(--btn-width);
+  height: calc(var(--btn-width)/2);
+  margin: var(--btn-margin);
+  font-size: 1.1rem;
+  border-radius: 10px;
+
+  background-color: transparent;
+  color: black;
+  border: 3px solid var(--btn-color, var(--base-btn-color));
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-color, var(--base-btn-color));
+  border-color: var(--btn-color, var(--base-btn-color));
+  color: white;
+}
+
+.red {
+  --btn-color: red;
+}
+
+.blue {
+  --btn-color: blue;
+}
+
+.green {
+  --btn-color: green;
+}
+
+.yellow {
+  --btn-color: gold;
+}
+
+.orange {
+  --btn-color: orange;
+}
+
+.purple {
+  --btn-color: purple;
+}
